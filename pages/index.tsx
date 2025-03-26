@@ -83,7 +83,7 @@ type TimerState = {
   seconds?: undefined;
 };
 
-class Timer extends React.Component<{target: Date, source?: Date, dayer?: false | true | 'date', dayString?: string, suffix?: string}, TimerState> {
+class Timer extends React.Component<{target: Date, source?: Date, dayer?: false | true | 'date', dayString?: string, suffix?: string, children?: React.ReactNode}, TimerState> {
   state: TimerState = {}
 
   private mounted = true;
